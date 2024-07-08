@@ -245,3 +245,56 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.caption-section {
+    margin-top: 20px
+}
+
+.caption-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.caption-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.caption-section input[type="text"]:focus {
+    border-color: #3888E8;
+    outline: none;
+}
+
+.caption-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 150px;
+    resize: none;
+}
+
+.caption-section textarea:focus {
+    border-color: #3888E8;
+    outline: none;
+}
+
+.caption-section h2 {
+    color: #333;
+}
+
+hr {
+    border: solid 1px #333;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}

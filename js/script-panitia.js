@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const twibbonCanvas = document.getElementById('twibbonCanvas');
             const context = twibbonCanvas.getContext('2d');
             const twibbonImage = new Image();
-            twibbonImage.src = '/assets/twibbon.png';
+            twibbonImage.src = '/assets/twibbon-panitia.png';
             twibbonImage.onload = function () {
                 twibbonCanvas.width = 1080;
                 twibbonCanvas.height = 1080;
