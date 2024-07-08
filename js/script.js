@@ -72,13 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    downloadLink.addEventListener('click', function (event) {
-        if (!imageUploaded) {
-            event.preventDefault();
-            showToast('Mohon pilih fotomu terlebih dahulu sebelum download!');
-        }
-    });
-
     document.getElementById('copyCaption').addEventListener('click', function () {
         const caption = document.getElementById('caption');
         caption.select();
