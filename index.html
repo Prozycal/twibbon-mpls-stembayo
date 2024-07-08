@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twibbon MPLS STEMBAYO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Website alternatif untuk twibbon MPLS STEMBAYO 2024!">
+</head>
+<body>
+    <div class="container">
+        <h1>Twibbon MPLS STEMBAYO</h1>
+        <p style="font-weight: bold;">Selamat datang di website alternatif untuk twibbon MPLS STEMBAYO 2024!</p>
+        <p>Disini kalian dapat mendownload twibbon dengan resolusi tinggi dan tanpa watermark secara gratis!</p>
+        <div class="upload-section">
+            <label class="custom-file-upload">
+                <input type="file" id="upload" accept="image/*">
+                <i class="fa fa-cloud-upload"></i> Pilih Fotomu
+            </label>
+        </div>
+        <div id="cropperModal" class="modal">
+            <div class="modal-content">
+                <h2>Sesuaikan Ukuran Fotomu!</h2>
+                <div class="image-crop-container">
+                    <img id="image" alt="Image for cropping">
+                </div>
+                <button id="cancelCrop" class="btn close">Cancel</button>
+                <button id="saveCrop" class="btn">Save</button>
+            </div>
+        </div>
+        <div class="twibbon-section">
+            <canvas id="twibbonCanvas"></canvas>
+            <div class="download-options">
+                <a id="downloadLinkLowRes" class="btn" download="twibbon-mpls.png">Download</a>
+            <button id="shareInstagram" class="btn"><i class="fa-brands fa-instagram"></i></button>
+        </div>
+        <p class="contact">Perlu diingat jika website ini masih dalam tahap pengembangan, jika menemukan kendala bisa menghubungi <a href="https://api.whatsapp.com/send?phone=6281914781910&text=halo%20min" target="_blank">admin website</a></p>
+        <div class="caption-section">
+            <textarea id="caption" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                 <p>Jangan lupa untuk pakai caption diatas saat post di Instagram yaa!</p>
+            <button id="copyCaption" class="btn">Copy</button>
+        </div>
+        <footer>
+            <p>Made with 💖 by <a href="https://links.frl.blue" target="_blank">frrlverse</a></p>
+        </footer>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
