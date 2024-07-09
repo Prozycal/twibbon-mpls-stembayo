@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom right, #66C5E2, #3888E8);
+    background: linear-gradient(to bottom right, #66C5E2, #3175c8);
 }
 
 .container {
@@ -88,6 +88,7 @@ i {
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -297,4 +298,9 @@ hr {
     border: solid 1px #333;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+
+.caption-section p {
+    margin-top: -18px;
+    margin-bottom: 35px;
 }

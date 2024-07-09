@@ -10,8 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const fullNameInput = document.getElementById('fullName');
     const classAndMajorInput = document.getElementById('classAndMajor');
     const captionTextarea = document.getElementById('caption');
+    const twibbonCanvas = document.getElementById('twibbonCanvas');
+    const context = twibbonCanvas.getContext('2d');
     let cropper;
     let imageUploaded = false;
+
+    function drawPlaceholderText() {
+        context.clearRect(0, 0, twibbonCanvas.width, twibbonCanvas.height);
+        context.font = '13px Poppins';
+        context.fillStyle = '#333';
+        context.textAlign = 'center';
+        context.fillText('Preview twibbon akan muncul disini!', twibbonCanvas.width / 2, twibbonCanvas.height / 2);
+        }
+        drawPlaceholderText();
 
     uploadInput.addEventListener('change', function (event) {
         const files = event.target.files;
