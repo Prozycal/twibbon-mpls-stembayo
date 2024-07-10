@@ -10,8 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const fullNameInput = document.getElementById('fullName');
     const classAndMajorInput = document.getElementById('classAndMajor');
     const captionTextarea = document.getElementById('caption');
+    const twibbonCanvas = document.getElementById('twibbonCanvas');
+    const context = twibbonCanvas.getContext('2d');
     let cropper;
     let imageUploaded = false;
+
+    function drawPlaceholderText() {
+        context.clearRect(0, 0, twibbonCanvas.width, twibbonCanvas.height);
+        context.font = '13px Poppins';
+        context.fillStyle = '#333';
+        context.textAlign = 'center';
+        context.fillText('Preview twibbon akan muncul disini!', twibbonCanvas.width / 2, twibbonCanvas.height / 2);
+        }
+        drawPlaceholderText();
 
     uploadInput.addEventListener('change', function (event) {
         const files = event.target.files;
@@ -93,17 +104,18 @@ document.addEventListener('DOMContentLoaded', function () {
         return `🚀 𝐈'𝐌 𝐑𝐄𝐀𝐃𝐘 𝐅𝐎𝐑 𝐌𝐏𝐋𝐒 𝐒𝐌𝐊𝐍 𝟐 𝐃𝐄𝐏𝐎𝐊 𝟐𝟎𝟐𝟒 ✨
 
 "𝐊𝐧𝐨𝐰𝐥𝐞𝐝𝐠𝐞 𝐢𝐬 𝐩𝐨𝐰𝐞𝐫 𝐚𝐧𝐝 𝐩𝐨𝐰𝐞𝐫 𝐢𝐬 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫"
-Pengetahuan adalah kekuatan dan kekuatan adalah karakter       
-
+Pengetahuan adalah kekuatan dan kekuatan adalah karakter
+                
 𝐇𝐚𝐥𝐨𝐨 𝐤𝐚𝐰𝐚𝐧! 👋🤩
-Saya ${fullName} dari ${classAndMajor}. Saya siap mengikuti masa pengenalan lingkungan sekolah dan menjadi bagian dari SMK Negeri 2 Depok Sleman yang mewujudkan generasi berpengetahuan, kuat, dan berkarakter.
-               
+Saya ${fullName} dari ${classAndMajor}. Saya siap menjadi panitia masa pengenalan lingkungan sekolah SMK Negeri 2 Depok Sleman yang mewujudkan generasi berpengetahuan, kuat, dan berkarakter.
+                
 Untuk informasi lebih lanjut kunjungi Instagram resmi:
 @infompls.smkn2depoksleman
 @smkn2depoksleman.official
 @osis.stembayo
 @pkstembayo
-@humtik.stembayo            
+@humtik.stembayo
+                
 Hashtags:
 #MPLSStembayo #MPLS2024 #MasaPengenalanLingkunganSekolah #Stembayo #SMKN2DepokSleman #ProudToBeSTEMBAYO`;
     }
